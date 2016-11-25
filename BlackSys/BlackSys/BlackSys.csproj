@@ -655,8 +655,7 @@
     <Content Include="Content\plugins\bootstrap-toastr\README.md" />
     <Content Include="Content\plugins\bootstrap-toastr\toastr.min.js.map" />
     <None Include="Scripts\_references.js" />
-    <Content Include="Images\LOGO.png" />
-    <Content Include="Images\sena.png" />
+    <Content Include="Note\NotasCss.css" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

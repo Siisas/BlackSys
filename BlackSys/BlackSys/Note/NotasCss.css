@@ -1,0 +1,66 @@
+﻿body {
+}
+
+.page-content {
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #e73d4a;
+    http: //localhost:29586/Content/template/layout/css/layout.css Con este css cambio el color de fondo del dashBoard;
+}
+
+.page-footer {
+    padding: 8px 20px 5px 20px;
+    font-size: 13px;
+    height: 33px;
+    background-color: #5eb319;
+    fila 2298 http://localhost:29586/Content/template/layout/css/layout.css;
+    /*este cambio de color parece ser el general*/
+}
+
+@media (min-width: 992px) .page-footer {
+    clear: left; background-color: #5eb319; http://localhost:29586/Content/template/layout/css/layout.css
+    /*modifico el color defs fondo del footer*/
+    linea 2334
+}
+
+.page-footer .page-footer-inner {
+    color: #fbfbfb;
+    http: //localhost:29586/Content/template/layout/css/themes/darkblue.css linea 507;
+    /*Cambio el color de la letra del footer*/
+}
+
+.portlet.box.blue > .portlet-title {
+    background-color: #5eb319;
+    linea 8651 http://localhost:29586/Content/template/css/components.css;
+    /*Cambio color titulo administrador de usuarios*/
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a, .page-sidebar .page-sidebar-menu > li.active > a, .page-sidebar .page-sidebar-menu > li.active.open > a {
+    background: #5eb319;
+    border-top-color: transparent;
+    color: #ffffff;
+
+cambio el color de la seleccion de fondo del inicio y de paso el color de el texto pero solode inicio
+
+    linea 303 http://localhost:29586/Content/template/layout/css/themes/darkblue.css
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a, .page-sidebar .page-sidebar-menu > li > a {
+    border-top: 1px solid #ffffff;
+    color: #ffffff;
+
+
+    modifico el color de las lineas que separan el menu border-top
+        color: se modifica el color de la fuente del menu
+
+      linea 262  http://localhost:29586/Content/template/layout/css/themes/darkblue.css
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #5eb319;
+    border-color: #23527c;
+Cambiar el color del boton en el gestion permisos  es con el hover:
+    linea 3361
+    http://localhost:29586/Content/plugins/bootstrap/css/bootstrap.min.css
+}
