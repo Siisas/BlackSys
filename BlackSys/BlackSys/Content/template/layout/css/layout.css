@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /* Cubic Bezier Transition */
 @media print {
   body {
@@ -63,7 +63,12 @@ Page Header
       display: inline-block;
       float: left; }
     .page-header.navbar .page-logo .logo-default {
-      margin: 16px 0 0 0; }
+      margin: 2px 0px 0 0;
+    width: 56px;  
+    border-radius: 50% !important;
+
+width: 50px;
+    }
     .page-header.navbar .page-logo .logo-mini {
       display: none;
       margin-left: 5px; }

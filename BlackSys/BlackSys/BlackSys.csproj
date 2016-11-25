@@ -494,6 +494,7 @@
     <Content Include="Content\template\layout\img\photo3.jpg" />
     <Content Include="Content\template\layout\img\remove-icon-small.png" />
     <Content Include="Content\template\layout\img\search_icon_light.png" />
+    <Content Include="Content\template\layout\img\sena.png" />
     <Content Include="Content\template\layout\img\sidebar-menu-arrow-reverse.png" />
     <Content Include="Content\template\layout\img\sidebar-menu-arrow-right.png" />
     <Content Include="Content\template\layout\img\sidebar-menu-arrow.png" />
@@ -654,6 +655,8 @@
     <Content Include="Content\plugins\bootstrap-toastr\README.md" />
     <Content Include="Content\plugins\bootstrap-toastr\toastr.min.js.map" />
     <None Include="Scripts\_references.js" />
+    <Content Include="Images\LOGO.png" />
+    <Content Include="Images\sena.png" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

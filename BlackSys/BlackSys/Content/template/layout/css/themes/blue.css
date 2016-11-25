@@ -4,12 +4,14 @@
     ***********/
 /* Header search bar, toggler button & top menu */
 .page-header.navbar {
-  background-color: #2D5F8B;
+  background-color: #5eb319;
+
   /* Top notification menu/bar */
   /* Header seaech box */
   /* Toggler button for sidebar expand/collapse and responsive sidebar menu */ }
   .page-header.navbar .top-menu .navbar-nav {
-    /* Extended Dropdowns */
+     background-color: #5eb319;
+      /* Extended Dropdowns */
     /* Notification */
     /* Inbox */
     /* Tasks */
