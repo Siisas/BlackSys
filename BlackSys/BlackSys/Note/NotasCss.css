@@ -64,3 +64,10 @@ Cambiar el color del boton en el gestion permisos  es con el hover:
     linea 3361
     http://localhost:29586/Content/plugins/bootstrap/css/bootstrap.min.css
 }
+.btn-primary {
+    color: #fff;
+    background-color: #5eb319;
+    border-color: #2e6da4;
+linear-gradient 
+    3355 linea http://localhost:29586/Content/plugins/bootstrap/css/bootstrap.min.css
+}
