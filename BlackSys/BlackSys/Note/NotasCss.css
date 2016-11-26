@@ -71,3 +71,20 @@ Cambiar el color del boton en el gestion permisos  es con el hover:
 linear-gradient 
     3355 linea http://localhost:29586/Content/plugins/bootstrap/css/bootstrap.min.css
 }
+
+.img-circle {
+    border-radius: 50% !important;
+    /* margin: -19px -11px 0px; */
+    width: 48px;
+    http: //localhost:29586/Content/template/css/components.css;
+linea32
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a, .page-sidebar .page-sidebar-menu > li:hover > a, .page-sidebar .page-sidebar-menu > li.open > a {
+    background: #f7f7f7;
+    color: #5eb319;
+
+    /*param cambiar el hovere en el momento de pasar por las pestañas del menu*/
+    http://localhost:29586/Content/template/layout/css/themes/darkblue.css
+        linea 283
+}
