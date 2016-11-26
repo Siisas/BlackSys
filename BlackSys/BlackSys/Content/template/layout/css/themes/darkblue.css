@@ -115,7 +115,9 @@
     .page-header.navbar .search-form.open {
       background: #3f4f62; }
   .page-header.navbar .menu-toggler {
-    background-image: url(../../img/sidebar_toggler_icon_darkblue.png); }
+    background: url(../../img/sidebar_toggler_icon_darkblue.png);
+    background-color:white;
+  }
 
 /* Default Horizontal Menu */
 .page-header.navbar {
