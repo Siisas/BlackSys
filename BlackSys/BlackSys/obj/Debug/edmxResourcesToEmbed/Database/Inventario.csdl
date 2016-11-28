@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlackSysBDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Inventario">
+    <Key>
+      <PropertyRef Name="id_Inventartio" />
+    </Key>
+    <Property Name="id_Inventartio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Producto_id_producto" Type="Int32" />
+    <Property Name="CantidadEntrada" Type="Int32" />
+    <Property Name="CantidadSalidad" Type="Int32" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK_Inventario_Producto1" FromRole="Inventario" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="id_producto" />
+    </Key>
+    <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion_porducto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Inventarios" Relationship="Self.FK_Inventario_Producto1" FromRole="Producto" ToRole="Inventario" />
+  </EntityType>
+  <Association Name="FK_Inventario_Producto1">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="Inventario" Type="Self.Inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="id_producto" />
+      </Principal>
+      <Dependent Role="Inventario">
+        <PropertyRef Name="Producto_id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BlackSysBDEntitiesInventario" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Inventarios" EntityType="Self.Inventario" />
+    <EntitySet Name="Productoes" EntityType="Self.Producto" />
+    <AssociationSet Name="FK_Inventario_Producto1" Association="Self.FK_Inventario_Producto1">
+      <End Role="Producto" EntitySet="Productoes" />
+      <End Role="Inventario" EntitySet="Inventarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

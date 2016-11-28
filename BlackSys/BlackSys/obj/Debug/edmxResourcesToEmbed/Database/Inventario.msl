@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlackSysBDModelStoreContainer" CdmEntityContainer="BlackSysBDEntitiesInventario">
+    <EntitySetMapping Name="Inventarios">
+      <EntityTypeMapping TypeName="BlackSysBDModel.Inventario">
+        <MappingFragment StoreEntitySet="Inventario">
+          <ScalarProperty Name="id_Inventartio" ColumnName="id_Inventartio" />
+          <ScalarProperty Name="Producto_id_producto" ColumnName="Producto_id_producto" />
+          <ScalarProperty Name="CantidadEntrada" ColumnName="CantidadEntrada" />
+          <ScalarProperty Name="CantidadSalidad" ColumnName="CantidadSalidad" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productoes">
+      <EntityTypeMapping TypeName="BlackSysBDModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="Descripcion_porducto" ColumnName="Descripcion_porducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

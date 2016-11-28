@@ -196,6 +196,6 @@ C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\bin\System.Web.Razor.x
 C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\bin\System.Web.WebPages.xml
 C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\bin\System.Web.WebPages.Razor.xml
-C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\obj\Debug\BlackSys.csprojResolveAssemblyReference.cache
 C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\obj\Debug\BlackSys.dll
 C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\obj\Debug\BlackSys.pdb
+C:\Users\Ricardo\Source\Repos\BlackSys2\BlackSys\BlackSys\obj\Debug\BlackSys.csprojResolveAssemblyReference.cache

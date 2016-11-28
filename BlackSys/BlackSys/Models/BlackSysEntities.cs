@@ -4,6 +4,7 @@ namespace BlackSys.Models
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    //using Database;
 
     public partial class BlackSysEntities : DbContext
     {
@@ -32,6 +33,8 @@ namespace BlackSys.Models
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<ProductCategory> ProductCategory { get; set; }
         public virtual DbSet<ProductPhoto> ProductPhoto { get; set; }
+        //public virtual DbSet<Inventario> Inventario { get; set; }
+        //public virtual DbSet<Producto> Producto { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Component>()
@@ -108,6 +111,12 @@ namespace BlackSys.Models
                 .HasMany(e => e.Permission)
                 .WithRequired(e => e.Menu)
                 .WillCascadeOnDelete(false);
+
         }
+
+       
+    
+
+        //public System.Data.Entity.DbSet<BlackSys.Database.Inventario> Inventario { get; set; }
     }
 }

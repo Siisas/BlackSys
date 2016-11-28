@@ -603,6 +603,16 @@
     <Content Include="Database\03 - Data.sql" />
     <Content Include="Database\02 - Complements.sql" />
     <Content Include="Database\04 - STORED PROC.sql" />
+    <Content Include="Database\Inventario.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Inventario.edmx</DependentUpon>
+      <LastGenOutput>Inventario.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\Inventario.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Inventario.edmx</DependentUpon>
+      <LastGenOutput>Inventario1.cs</LastGenOutput>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Content\plugins\simple-line-icons\fonts\Simple-Line-Icons.eot" />
     <Content Include="Content\plugins\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
@@ -654,6 +664,13 @@
     <Content Include="Content\plugins\bootbox\README.md" />
     <Content Include="Content\plugins\bootstrap-toastr\README.md" />
     <Content Include="Content\plugins\bootstrap-toastr\toastr.min.js.map" />
+    <EntityDeploy Include="Database\Inventario.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Inventario.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Database\Inventario.edmx.diagram">
+      <DependentUpon>Inventario.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\_references.js" />
     <Content Include="Note\NotasCss.css" />
     <Content Include="Web.config" />
@@ -674,9 +691,27 @@
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ComponentCategoryController.cs" />
+    <Compile Include="Controllers\InventarioController.cs" />
     <Compile Include="Controllers\PermissionsController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Controllers\SystemController.cs" />
+    <Compile Include="Database\Inventario.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inventario.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Inventario.cs">
+      <DependentUpon>Inventario.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Inventario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inventario.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Producto.cs">
+      <DependentUpon>Inventario.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -770,6 +805,16 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Inventario\Create.cshtml" />
+    <Content Include="Views\Inventario\Delete.cshtml" />
+    <Content Include="Views\Inventario\Details.cshtml" />
+    <Content Include="Views\Inventario\Edit.cshtml" />
+    <Content Include="Views\Inventario\Index.cshtml" />
+    <Content Include="Views\Producto\Create.cshtml" />
+    <Content Include="Views\Producto\Delete.cshtml" />
+    <Content Include="Views\Producto\Details.cshtml" />
+    <Content Include="Views\Producto\Edit.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

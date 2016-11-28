@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlackSysBDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Inventario">
+    <Key>
+      <PropertyRef Name="id_Inventartio" />
+    </Key>
+    <Property Name="id_Inventartio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Producto_id_producto" Type="int" />
+    <Property Name="CantidadEntrada" Type="int" />
+    <Property Name="CantidadSalidad" Type="int" />
+    <Property Name="FechaIngreso" Type="date" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="id_producto" />
+    </Key>
+    <Property Name="id_producto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion_porducto" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Inventario_Producto1">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="Inventario" Type="Self.Inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="id_producto" />
+      </Principal>
+      <Dependent Role="Inventario">
+        <PropertyRef Name="Producto_id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BlackSysBDModelStoreContainer">
+    <EntitySet Name="Inventario" EntityType="Self.Inventario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Inventario_Producto1" Association="Self.FK_Inventario_Producto1">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Inventario" EntitySet="Inventario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
